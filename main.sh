@@ -25,3 +25,28 @@ view_students() {
     echo "No student records found."
   fi
 }
+# Function to delete a student record by ID
+delete_student() {
+  echo "Enter student ID to delete:"
+  read student_id
+
+  if [ -f "$STUDENT_FILE" ]; then
+    # Display the student record that will be deleted for debugging
+    echo "Deleting student record:"
+    grep "^$student_id," "$STUDENT_FILE"
+
+    # Use grep to filter out the student record and save the output to a temporary file
+    grep -v "^$student_id," "$STUDENT_FILE" > temp.txt
+
+    # Check if the temp file was created and is not empty before moving it
+    if [ -s temp.txt ]; then
+      mv temp.txt "$STUDENT_FILE"
+      echo "Student record deleted successfully!"
+    else
+      echo "No matching student record found or temporary file is empty. No changes made."
+    fi
+  else
+    echo "No student records found."
+  fi
+}
+
