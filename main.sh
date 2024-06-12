@@ -68,3 +68,37 @@ update_student() {
     echo "No student records found."
   fi
 }
+menu() {
+  while true; do
+    clear
+    echo ""
+    echo "               Welcome to our App"
+    echo ""
+    echo "What would you like to do today?"
+    echo ""
+    echo "               Main Menu"
+    echo "----------------------------------"
+    echo "1. Add New Student"
+    echo "2. View ALL Students"
+    echo "3. Update Student"
+    echo "4. Delete Student"
+    echo "5. Exit"
+    echo "----------------------------------"
+    echo "Enter your choice (1-8):"
+    read choice
+
+    case $choice in
+      1) create_student ;;
+      2) view_students ;;
+      3) update_student ;;
+      4) delete_student ;;
+      5) exit 0 ;;
+      *) echo "Invalid choice! Please enter a number between 1 and 8." ;;
+    esac
+    echo "Press Enter to continue..."
+    read
+  done
+}
+
+# Start the application
+menu
