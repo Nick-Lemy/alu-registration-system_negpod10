@@ -1,12 +1,2 @@
 # Define the files to be moved
-FILES=("students-list_0524.txt" "student-emails.txt" "main.sh" "select-emails.sh" "backup-Negpod_10.sh")
-
-# Move each file to the target directory
-for FILE in "${FILES[@]}"; do
-  if [ -f $FILE ]; then
-    mv $FILE $TARGET_DIR/
-    echo "Moved $FILE to $TARGET_DIR"
-  else
-    echo "File $FILE does not exist, skipping."
-  fi
-done
+mv main.sh students-list_1023.txt select-emails.sh student-emails.txt backup-Negpod_10.sh negpod_10-q1/
