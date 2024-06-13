@@ -96,7 +96,7 @@ menu() {
     echo "4. Delete Student"
     echo "5. Save Student Email Sorted in ASC"
     echo "6. Back-up your data"
-    echo "6. Exit"
+    echo "7. Exit"
     echo "----------------------------------"
     echo "Enter your choice (1-6):"
     read choice
