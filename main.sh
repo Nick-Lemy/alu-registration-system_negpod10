@@ -114,5 +114,5 @@ menu() {
   done
 }
 
-# Start the application
+# Start the application right now!
 menu
