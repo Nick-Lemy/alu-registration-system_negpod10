@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 # The negpod 10 Task 1
+
 # File where student records are stored
 
 STUDENT_FILE="students-list_0524.txt"
 
 # Function to create a new student record
+
 create_student() {
   echo "Enter student email:"
   read email
@@ -19,6 +21,7 @@ create_student() {
 }
 
 # Function to view all student records
+
 view_students() {
   if [ -f $STUDENT_FILE ]; then
     cat $STUDENT_FILE
@@ -27,6 +30,7 @@ view_students() {
   fi
 }
 # Function to delete a student record by ID
+
 delete_student() {
   echo "Enter student ID to delete:"
   read student_id
@@ -50,7 +54,9 @@ delete_student() {
     echo "No student records found."
   fi
 }
+
 # Function to update a student record by ID
+
 update_student() {
   echo "Enter student ID to update:"
   read student_id
@@ -69,7 +75,9 @@ update_student() {
     echo "No student records found."
   fi
 }
+
 # Function to save sorted emails 
+
 save_sorted_emails() {
   if [ -f $STUDENT_FILE ]; then
     cut -d',' -f2 $STUDENT_FILE | sort > $SORTED_EMAILS_FILE
@@ -78,7 +86,9 @@ save_sorted_emails() {
     echo "No student records found."
   fi
 }
+
 # Function for backup data
+
 backup_data() {
 source backup-Negpod_ID.sh}
 
@@ -103,8 +113,10 @@ menu() {
     echo "----------------------------------"
     echo "Enter your choice (1-7):"
     read choice
+
  # Codes to read the user input choice
-    case $choice in
+
+ case $choice in
       1) create_student ;;
       2) view_students ;;
       3) update_student ;;
@@ -120,4 +132,5 @@ menu() {
 }
 
 # Start the application right now!
+
 menu
