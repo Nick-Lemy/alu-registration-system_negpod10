@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # The negpod 10 Task 1
 # File where student records are stored
+
 STUDENT_FILE="students-list_0524.txt"
 
 # Function to create a new student record
@@ -73,9 +74,9 @@ update_student() {
 menu() {
   while true; do
     clear
-    echo ""
-    echo "               Welcome to our App"
-    echo ""
+    echo "************************************************"
+    echo "***************Welcome to our App***************"
+    echo "************************************************"
     echo "What would you like to do today?"
     echo ""
     echo "               Main Menu"
