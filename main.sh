@@ -68,6 +68,8 @@ update_student() {
     echo "No student records found."
   fi
 }
+
+
 menu() {
   while true; do
     clear
@@ -82,7 +84,8 @@ menu() {
     echo "2. View ALL Students"
     echo "3. Update Student"
     echo "4. Delete Student"
-    echo "5. Exit"
+    echo "5. Save Student Email Sorted in ASC"
+    echo "6. Exit"
     echo "----------------------------------"
     echo "Enter your choice (1-8):"
     read choice
@@ -92,7 +95,7 @@ menu() {
       2) view_students ;;
       3) update_student ;;
       4) delete_student ;;
-      5) exit 0 ;;
+      6) exit 0 ;;
       *) echo "Invalid choice! Please enter a number between 1 and 8." ;;
     esac
     echo "Press Enter to continue..."
