@@ -77,6 +77,7 @@ menu() {
     echo "************************************************"
     echo "***************Welcome to our App***************"
     echo "************************************************"
+    echo ""
     echo "What would you like to do today?"
     echo ""
     echo "               Main Menu"
@@ -88,7 +89,7 @@ menu() {
     echo "5. Save Student Email Sorted in ASC"
     echo "6. Exit"
     echo "----------------------------------"
-    echo "Enter your choice (1-8):"
+    echo "Enter your choice (1-6):"
     read choice
 
     case $choice in
@@ -97,7 +98,7 @@ menu() {
       3) update_student ;;
       4) delete_student ;;
       6) exit 0 ;;
-      *) echo "Invalid choice! Please enter a number between 1 and 8." ;;
+      *) echo "Invalid choice! Please enter a number between 1 and 6." ;;
     esac
     echo "Press Enter to continue..."
     read
