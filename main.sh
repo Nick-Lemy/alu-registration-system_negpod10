@@ -99,7 +99,7 @@ menu() {
     echo "----------------------------------"
     echo "Enter your choice (1-6):"
     read choice
- # codes to read the user input choice
+ # Codes to read the user input choice
     case $choice in
       1) create_student ;;
       2) view_students ;;
