@@ -7,4 +7,6 @@ for FILE in "${FILES[@]}"; do
     mv $FILE $TARGET_DIR/
     echo "Moved $FILE to $TARGET_DIR"
   else
-    echo "File $FILE d
+    echo "File $FILE does not exist, skipping."
+  fi
+done
