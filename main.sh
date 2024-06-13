@@ -98,7 +98,7 @@ menu() {
     echo "6. Back-up your data"
     echo "7. Exit"
     echo "----------------------------------"
-    echo "Enter your choice (1-6):"
+    echo "Enter your choice (1-7):"
     read choice
  # Codes to read the user input choice
     case $choice in
