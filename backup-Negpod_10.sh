@@ -1,11 +1,12 @@
 #!/bin/bash
 # Define variables
-NEGPOD_ID="10"  # Replace with your specific negpod ID
+NEGPOD_ID="10"
 DIRECTORY="negpod_${NEGPOD_ID}-q1"
 REMOTE_USER="15f4a6008116"
 REMOTE_HOST="15f4a6008116.7b3ea1d9.alu-cod.online"
 REMOTE_PASSWORD="e4256437b4f77fd2feb8"
 REMOTE_PATH="/summative/0524-2024m"
+
 # Check if the local directory exists
 if [ ! -d "$DIRECTORY" ]; then
     echo "Directory $DIRECTORY does not exist."
