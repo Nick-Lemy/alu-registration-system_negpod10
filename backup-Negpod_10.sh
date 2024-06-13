@@ -1,6 +1,6 @@
 #!/bin/bash
 # Define variables
-NEGPOD_ID="1"  # Replace with your specific negpod ID
+NEGPOD_ID="10"  # Replace with your specific negpod ID
 DIRECTORY="negpod_${NEGPOD_ID}-q1"
 REMOTE_USER="15f4a6008116"
 REMOTE_HOST="15f4a6008116.7b3ea1d9.alu-cod.online"
