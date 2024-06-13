@@ -69,7 +69,7 @@ update_student() {
     echo "No student records found."
   fi
 }
-
+# Function to save sorted emails 
 save_sorted_emails() {
   if [ -f $STUDENT_FILE ]; then
     cut -d',' -f2 $STUDENT_FILE | sort > $SORTED_EMAILS_FILE
