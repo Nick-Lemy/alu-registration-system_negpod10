@@ -132,5 +132,4 @@ menu() {
 }
 
 # Start the application right now!
-
 menu
