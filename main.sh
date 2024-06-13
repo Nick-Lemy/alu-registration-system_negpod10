@@ -121,8 +121,8 @@ menu() {
       2) view_students ;;
       3) update_student ;;
       4) delete_student ;;
-      6) backup_data ;; 
-      7) exit 0 ;;
+      5) backup_data ;; 
+      6) exit 0 ;;
       *) echo "Invalid choice! Please enter a number between 1 and 7." ;;
     esac
     echo "Press Enter to continue..."
