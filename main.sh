@@ -111,7 +111,7 @@ menu() {
     echo "5. Back-up your data"
     echo "6. Exit"
     echo "----------------------------------"
-    echo "Enter your choice (1-7):"
+    echo "Enter your choice (1-6):"
     read choice
 
  # Codes to read the user input choice
@@ -123,7 +123,7 @@ menu() {
       4) delete_student ;;
       5) backup_data ;; 
       6) exit 0 ;;
-      *) echo "Invalid choice! Please enter a number between 1 and 7." ;;
+      *) echo "Invalid choice! Please enter a number between 1 and 6." ;;
     esac
     echo "Press Enter to continue..."
     read
