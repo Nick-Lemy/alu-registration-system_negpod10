@@ -108,9 +108,8 @@ menu() {
     echo "2. View ALL Students"
     echo "3. Update Student"
     echo "4. Delete Student"
-    echo "5. Save Student Email Sorted in ASC"
-    echo "6. Back-up your data"
-    echo "7. Exit"
+    echo "5. Back-up your data"
+    echo "6. Exit"
     echo "----------------------------------"
     echo "Enter your choice (1-7):"
     read choice
@@ -122,7 +121,6 @@ menu() {
       2) view_students ;;
       3) update_student ;;
       4) delete_student ;;
-      5) save_sorted_emails ;;
       6) backup_data ;; 
       7) exit 0 ;;
       *) echo "Invalid choice! Please enter a number between 1 and 7." ;;
