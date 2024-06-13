@@ -78,7 +78,7 @@ save_sorted_emails() {
     echo "No student records found."
   fi
 }
-[200~backup_data() {
+backup_data() {
 source backup-Negpod_ID.sh}
 
 menu() {
