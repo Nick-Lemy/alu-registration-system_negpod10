@@ -70,6 +70,14 @@ update_student() {
   fi
 }
 
+save_sorted_emails() {
+  if [ -f $STUDENT_FILE ]; then
+    cut -d',' -f2 $STUDENT_FILE | sort > $SORTED_EMAILS_FILE
+    echo "Student emails saved in sorted order to $SORTED_EMAILS_FILE"
+  else
+    echo "No student records found."
+  fi
+}
 
 menu() {
   while true; do
