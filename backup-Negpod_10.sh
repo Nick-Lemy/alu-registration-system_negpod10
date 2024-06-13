@@ -7,14 +7,14 @@ REMOTE_HOST="15f4a6008116.7b3ea1d9.alu-cod.online"
 REMOTE_PASSWORD="e4256437b4f77fd2feb8"
 REMOTE_PATH="/summative/0524-2024m"
 # Check if the local directory exists
-if [ ! -d "$LOCAL_DIR" ]; then
-    echo "Directory $LOCAL_DIR does not exist."
+if [ ! -d "$DIRECTORY" ]; then
+    echo "Directory $DIRECTORY does not exist."
     exit 1
 fi
 
 # Use expect to automate the password entry for scp
 expect <<EOF
-spawn scp -r $LOCAL_DIR ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}
+spawn scp -r $DIRECTORY ${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}
 expect {
     "password:" {
         send "$REMOTE_PASS\r"
