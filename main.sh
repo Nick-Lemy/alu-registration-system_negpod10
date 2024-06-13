@@ -112,7 +112,7 @@ menu() {
       5) save_sorted_emails ;;
       6) backup_data ;; 
       7) exit 0 ;;
-      *) echo "Invalid choice! Please enter a number between 1 and 6." ;;
+      *) echo "Invalid choice! Please enter a number between 1 and 7." ;;
     esac
     echo "Press Enter to continue..."
     read
