@@ -110,7 +110,8 @@ menu() {
       3) update_student ;;
       4) delete_student ;;
       5) save_sorted_emails ;;
-      6) exit 0 ;;
+      6) backup_data ;; 
+     6) exit 0 ;;
       *) echo "Invalid choice! Please enter a number between 1 and 6." ;;
     esac
     echo "Press Enter to continue..."
