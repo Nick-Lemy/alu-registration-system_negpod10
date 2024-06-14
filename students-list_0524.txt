@@ -1,9 +1,6 @@
 1009786,l.icyez@alustudent.com,22
-<<<<<<< HEAD
 5678,h.utatsinez@alustudent.com,30
-=======
 1234,h.utatsinez@alustudent.com,30
 100789,l.icyeza@alustudent.com,22
 1000768,l.icyeza@alustudent.com,22
->>>>>>> c247499c29d052bf14bb1c14ded56b50b7033c1b
 00001,k.hakizimana1@alustudent.com,45
