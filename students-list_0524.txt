@@ -1,5 +1,4 @@
 1009786,l.icyez@alustudent.com,22
-5678,h.utatsinez@alustudent.com,30
 1234,h.utatsinez@alustudent.com,30
 100789,l.icyeza@alustudent.com,22
 1000768,l.icyeza@alustudent.com,22
